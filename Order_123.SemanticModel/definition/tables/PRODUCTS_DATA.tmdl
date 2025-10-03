@@ -1,0 +1,148 @@
+table PRODUCTS_DATA
+	lineageTag: d647fd5b-5b69-4282-85d5-988d4d6a0406
+
+	column ProductKey
+		dataType: int64
+		formatString: 0
+		lineageTag: db5e02e2-7281-42e0-be18-a589b0adbc03
+		summarizeBy: count
+		sourceColumn: ProductKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductSubcategoryKey
+		dataType: string
+		lineageTag: c65af3ab-92d5-45f2-b639-026a0c668243
+		summarizeBy: none
+		sourceColumn: ProductSubcategoryKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column WeightUnitMeasureCode
+		dataType: string
+		lineageTag: 6065fb51-a84b-4226-bd52-8f00459f63a7
+		summarizeBy: none
+		sourceColumn: WeightUnitMeasureCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column SizeUnitMeasureCode
+		dataType: string
+		lineageTag: fc1d3808-fed3-40f7-88a6-fbed6cf06470
+		summarizeBy: none
+		sourceColumn: SizeUnitMeasureCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column EnglishProductName
+		dataType: string
+		lineageTag: f8eb7a1e-4de9-4611-ba3e-409726dd045f
+		summarizeBy: none
+		sourceColumn: EnglishProductName
+
+		annotation SummarizationSetBy = Automatic
+
+	column StandardCost
+		dataType: string
+		lineageTag: 82fa407f-dcad-4736-89ae-ebf104053773
+		summarizeBy: none
+		sourceColumn: StandardCost
+
+		annotation SummarizationSetBy = Automatic
+
+	column Color
+		dataType: string
+		lineageTag: c17d89f7-1dd2-4ca4-a0e8-109cafbb22b5
+		summarizeBy: none
+		sourceColumn: Color
+
+		annotation SummarizationSetBy = Automatic
+
+	column SafetyStockLevel
+		dataType: int64
+		formatString: 0
+		lineageTag: 070f6693-dcb6-4835-8ae1-08d45e3c1a5d
+		summarizeBy: sum
+		sourceColumn: SafetyStockLevel
+
+		annotation SummarizationSetBy = Automatic
+
+	column ListPrice
+		dataType: string
+		lineageTag: 99ea6970-21fa-427c-b11d-827e9b2e97a0
+		summarizeBy: none
+		sourceColumn: ListPrice
+
+		annotation SummarizationSetBy = Automatic
+
+	column Size
+		dataType: string
+		lineageTag: 24675cf7-5fe3-471e-ae14-c734a10fddca
+		summarizeBy: none
+		sourceColumn: Size
+
+		annotation SummarizationSetBy = Automatic
+
+	column Weight
+		dataType: int64
+		formatString: 0
+		lineageTag: 3d248e30-76cc-438e-8af7-9886bfc2497e
+		summarizeBy: sum
+		sourceColumn: Weight
+
+		annotation SummarizationSetBy = Automatic
+
+	column DaysToManufacture
+		dataType: int64
+		formatString: 0
+		lineageTag: a389e88b-318f-4d6c-b409-24c577e40e95
+		summarizeBy: sum
+		sourceColumn: DaysToManufacture
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductLine
+		dataType: string
+		lineageTag: bec5d88e-9c7d-4113-ad3a-50c737626c44
+		summarizeBy: none
+		sourceColumn: ProductLine
+
+		annotation SummarizationSetBy = Automatic
+
+	column DealerPrice
+		dataType: string
+		lineageTag: 4c40ca01-37aa-494c-b61f-e2a64ace7556
+		summarizeBy: none
+		sourceColumn: DealerPrice
+
+		annotation SummarizationSetBy = Automatic
+
+	column Class
+		dataType: string
+		lineageTag: 6c50cb10-f1c8-4c4e-997a-3b564683ac7c
+		summarizeBy: none
+		sourceColumn: Class
+
+		annotation SummarizationSetBy = Automatic
+
+	column Style
+		dataType: string
+		lineageTag: 9fb323db-3951-46ed-80c8-be9f08c40e5a
+		summarizeBy: none
+		sourceColumn: Style
+
+		annotation SummarizationSetBy = Automatic
+
+	partition PRODUCTS_DATA = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("D:\excel\ProductDatabase.xlsx"), null, true),
+				    PRODUCTS_DATA_Sheet = Source{[Item="PRODUCTS_DATA",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(PRODUCTS_DATA_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"ProductKey", Int64.Type}, {"ProductSubcategoryKey", type any}, {"WeightUnitMeasureCode", type text}, {"SizeUnitMeasureCode", type any}, {"EnglishProductName", type text}, {"StandardCost", type any}, {"Color", type text}, {"SafetyStockLevel", Int64.Type}, {"ListPrice", type any}, {"Size", type any}, {"Weight", Int64.Type}, {"DaysToManufacture", Int64.Type}, {"ProductLine", type any}, {"DealerPrice", type any}, {"Class", type text}, {"Style", type any}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

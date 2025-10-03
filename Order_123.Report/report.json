@@ -1,0 +1,42 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.64\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "3c3fc273695b5287e0bb",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"3bd5b0e69ac6a7a97292\",\"layouts\":[{\"id\":0,\"position\":{\"x\":91.93855843481465,\"y\":67.23864721352116,\"z\":0,\"width\":341.68210522789326,\"height\":610.6366940819779,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"PRODUCTS_DATA.Class\"},{\"queryRef\":\"PRODUCTS_DATA.Color\"},{\"queryRef\":\"PRODUCTS_DATA.EnglishProductName\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PRODUCTS_DATA\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Class\"},\"Name\":\"PRODUCTS_DATA.Class\",\"NativeReferenceName\":\"Class\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Color\"},\"Name\":\"PRODUCTS_DATA.Color\",\"NativeReferenceName\":\"Color\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"EnglishProductName\"},\"Name\":\"PRODUCTS_DATA.EnglishProductName\",\"NativeReferenceName\":\"EnglishProductName\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 610.64,
+          "width": 341.68,
+          "x": 91.94,
+          "y": 67.24,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

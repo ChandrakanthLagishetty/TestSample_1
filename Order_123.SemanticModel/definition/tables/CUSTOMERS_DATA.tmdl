@@ -1,0 +1,258 @@
+table CUSTOMERS_DATA
+	lineageTag: a022d110-7349-44ba-aa05-72aee31dcb97
+
+	column CustomerKey
+		dataType: int64
+		formatString: 0
+		lineageTag: eb8dde4e-1671-429f-b356-c679fbdd61ba
+		summarizeBy: count
+		sourceColumn: CustomerKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column GeographyKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 9986a7cb-fee7-4fcb-81da-6988fadec88a
+		summarizeBy: count
+		sourceColumn: GeographyKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column CustomerAlternateKey
+		dataType: string
+		lineageTag: 24e729de-65e5-4ec2-a169-1a95f9eb71e8
+		summarizeBy: none
+		sourceColumn: CustomerAlternateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column Title
+		dataType: string
+		lineageTag: 4cfe60c1-c404-46d2-892c-3729d3142fa8
+		summarizeBy: none
+		sourceColumn: Title
+
+		annotation SummarizationSetBy = Automatic
+
+	column FirstName
+		dataType: string
+		lineageTag: 7d275cde-6db1-4d5c-95a2-df8ac22f0ee7
+		summarizeBy: none
+		sourceColumn: FirstName
+
+		annotation SummarizationSetBy = Automatic
+
+	column MiddleName
+		dataType: string
+		lineageTag: 4e3a8a37-0c07-4920-b005-e7753d8fd906
+		summarizeBy: none
+		sourceColumn: MiddleName
+
+		annotation SummarizationSetBy = Automatic
+
+	column LastName
+		dataType: string
+		lineageTag: a1287821-d242-4dd1-add8-94e5f22b6fcf
+		summarizeBy: none
+		sourceColumn: LastName
+
+		annotation SummarizationSetBy = Automatic
+
+	column NameStyle
+		dataType: int64
+		formatString: 0
+		lineageTag: 6dcc7439-1032-4471-aa5d-ef50cee569b8
+		summarizeBy: sum
+		sourceColumn: NameStyle
+
+		annotation SummarizationSetBy = Automatic
+
+	column BirthDate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 051255ba-0f71-4260-80ec-597ac398b50a
+		summarizeBy: none
+		sourceColumn: BirthDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column MaritalStatus
+		dataType: string
+		lineageTag: 28ccc9fc-4973-462b-ba87-2cca5fec0ed4
+		summarizeBy: none
+		sourceColumn: MaritalStatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column Suffix
+		dataType: string
+		lineageTag: d1baceb6-5194-426d-8dea-d3f8dfa62595
+		summarizeBy: none
+		sourceColumn: Suffix
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gender
+		dataType: string
+		lineageTag: 9728e6ad-b6e9-4fa5-8326-6122fa64c6ae
+		summarizeBy: none
+		sourceColumn: Gender
+
+		annotation SummarizationSetBy = Automatic
+
+	column EmailAddress
+		dataType: string
+		lineageTag: 9df1170f-06b3-446e-bb8f-6a0ce8fb06e9
+		summarizeBy: none
+		sourceColumn: EmailAddress
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearlyIncome
+		dataType: int64
+		formatString: 0
+		lineageTag: cc6f5089-332b-48a3-b815-5d5d9af0a7b6
+		summarizeBy: sum
+		sourceColumn: YearlyIncome
+
+		annotation SummarizationSetBy = Automatic
+
+	column TotalChildren
+		dataType: int64
+		formatString: 0
+		lineageTag: 28d433b2-9bd9-430c-8e4c-a406be94400c
+		summarizeBy: sum
+		sourceColumn: TotalChildren
+
+		annotation SummarizationSetBy = Automatic
+
+	column NumberChildrenAtHome
+		dataType: int64
+		formatString: 0
+		lineageTag: 5eadcfe9-29ba-4ffb-88ad-0a9a522b0e65
+		summarizeBy: sum
+		sourceColumn: NumberChildrenAtHome
+
+		annotation SummarizationSetBy = Automatic
+
+	column EnglishEducation
+		dataType: string
+		lineageTag: 4077237a-c0dd-4b1c-ad86-f691914866a9
+		summarizeBy: none
+		sourceColumn: EnglishEducation
+
+		annotation SummarizationSetBy = Automatic
+
+	column SpanishEducation
+		dataType: string
+		lineageTag: 3ac9917f-ce2b-4eaf-aa77-6fe43c8c9447
+		summarizeBy: none
+		sourceColumn: SpanishEducation
+
+		annotation SummarizationSetBy = Automatic
+
+	column FrenchEducation
+		dataType: string
+		lineageTag: 28ba9964-866f-48f7-b6fd-c12690016e50
+		summarizeBy: none
+		sourceColumn: FrenchEducation
+
+		annotation SummarizationSetBy = Automatic
+
+	column EnglishOccupation
+		dataType: string
+		lineageTag: 5e6d42fb-6c6c-4ce6-bda1-1245a730a72b
+		summarizeBy: none
+		sourceColumn: EnglishOccupation
+
+		annotation SummarizationSetBy = Automatic
+
+	column SpanishOccupation
+		dataType: string
+		lineageTag: be990f64-1585-465b-aaa3-924719d1fbe1
+		summarizeBy: none
+		sourceColumn: SpanishOccupation
+
+		annotation SummarizationSetBy = Automatic
+
+	column FrenchOccupation
+		dataType: string
+		lineageTag: 007d4b0e-6aad-4bb8-bdb3-968db579fee8
+		summarizeBy: none
+		sourceColumn: FrenchOccupation
+
+		annotation SummarizationSetBy = Automatic
+
+	column HouseOwnerFlag
+		dataType: int64
+		formatString: 0
+		lineageTag: 73e0b11e-c7ff-4858-a89f-6677b5cb4c8e
+		summarizeBy: sum
+		sourceColumn: HouseOwnerFlag
+
+		annotation SummarizationSetBy = Automatic
+
+	column NumberCarsOwned
+		dataType: int64
+		formatString: 0
+		lineageTag: c4e85934-f393-4385-a7a2-f0aa4b4ddd6b
+		summarizeBy: sum
+		sourceColumn: NumberCarsOwned
+
+		annotation SummarizationSetBy = Automatic
+
+	column AddressLine1
+		dataType: string
+		lineageTag: a50f3cf8-07e0-4ee8-8b47-b95442f76efe
+		summarizeBy: none
+		sourceColumn: AddressLine1
+
+		annotation SummarizationSetBy = Automatic
+
+	column AddressLine2
+		dataType: string
+		lineageTag: 96162f50-2952-4da8-bc76-e4c6b3a590b2
+		summarizeBy: none
+		sourceColumn: AddressLine2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Phone
+		dataType: string
+		lineageTag: 5612a8ad-5ede-4eca-919d-caa4ac0d6d70
+		summarizeBy: none
+		sourceColumn: Phone
+
+		annotation SummarizationSetBy = Automatic
+
+	column DateFirstPurchase
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: ef949e84-7feb-41f2-9699-bc9819006703
+		summarizeBy: none
+		sourceColumn: DateFirstPurchase
+
+		annotation SummarizationSetBy = Automatic
+
+	column CommuteDistance
+		dataType: string
+		lineageTag: 302f58de-4625-4e02-a8c6-bd7af9a90840
+		summarizeBy: none
+		sourceColumn: CommuteDistance
+
+		annotation SummarizationSetBy = Automatic
+
+	partition CUSTOMERS_DATA = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("D:\excel\ProductDatabase.xlsx"), null, true),
+				    CUSTOMERS_DATA_Sheet = Source{[Item="CUSTOMERS_DATA",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(CUSTOMERS_DATA_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"CustomerKey", Int64.Type}, {"GeographyKey", Int64.Type}, {"CustomerAlternateKey", type text}, {"Title", type any}, {"FirstName", type text}, {"MiddleName", type text}, {"LastName", type text}, {"NameStyle", Int64.Type}, {"BirthDate", type datetime}, {"MaritalStatus", type text}, {"Suffix", type any}, {"Gender", type text}, {"EmailAddress", type text}, {"YearlyIncome", Int64.Type}, {"TotalChildren", Int64.Type}, {"NumberChildrenAtHome", Int64.Type}, {"EnglishEducation", type text}, {"SpanishEducation", type text}, {"FrenchEducation", type text}, {"EnglishOccupation", type text}, {"SpanishOccupation", type text}, {"FrenchOccupation", type text}, {"HouseOwnerFlag", Int64.Type}, {"NumberCarsOwned", Int64.Type}, {"AddressLine1", type text}, {"AddressLine2", type text}, {"Phone", type text}, {"DateFirstPurchase", type datetime}, {"CommuteDistance", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

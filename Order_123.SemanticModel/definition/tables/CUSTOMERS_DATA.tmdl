@@ -1,6 +1,10 @@
 table CUSTOMERS_DATA
 	lineageTag: a022d110-7349-44ba-aa05-72aee31dcb97
 
+	measure count = COUNTROWS(CUSTOMERS_DATA)
+		formatString: 0
+		lineageTag: 98c2f818-9564-423b-a2b5-55a62cb00a6a
+
 	column CustomerKey
 		dataType: int64
 		formatString: 0

@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.64\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.64\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
   "layoutOptimization": 0,
   "resourcePackages": [
     {
@@ -20,6 +20,27 @@
   "sections": [
     {
       "config": "{}",
+      "displayName": "Page 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "01fdf702b55882062024",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"ae687d98ce822e87905c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":170.15494396891071,\"y\":98.79964488517396,\"z\":0,\"width\":555.7480024791035,\"height\":477.5316169450075,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"PRODUCTS_DATA.Color\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(PRODUCTS_DATA.ProductKey)\"}],\"Series\":[{\"queryRef\":\"PRODUCTS_DATA.ListPrice\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PRODUCTS_DATA\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Color\"},\"Name\":\"PRODUCTS_DATA.Color\",\"NativeReferenceName\":\"Color\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"ProductKey\"}},\"Function\":5},\"Name\":\"CountNonNull(PRODUCTS_DATA.ProductKey)\",\"NativeReferenceName\":\"Count of ProductKey\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"ListPrice\"},\"Name\":\"PRODUCTS_DATA.ListPrice\",\"NativeReferenceName\":\"ListPrice\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"ProductKey\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 477.53,
+          "width": 555.75,
+          "x": 170.15,
+          "y": 98.80,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
       "displayName": "Page 1",
       "displayOption": 1,
       "filters": "[]",
@@ -36,22 +57,22 @@
           "z": 0.00
         },
         {
-          "config": "{\"name\":\"5f9ad385d71945c23015\",\"layouts\":[{\"id\":0,\"position\":{\"x\":585.9367828606845,\"y\":332.0765841973903,\"z\":2,\"width\":382.8486239300491,\"height\":237.3935911824319,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CUSTOMERS_DATA.count\"}],\"Category\":[{\"queryRef\":\"CUSTOMERS_DATA.Gender\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTOMERS_DATA\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"count\"},\"Name\":\"CUSTOMERS_DATA.count\",\"NativeReferenceName\":\"count\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Gender\"},\"Name\":\"CUSTOMERS_DATA.Gender\",\"NativeReferenceName\":\"Gender\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"count\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "config": "{\"name\":\"5f9ad385d71945c23015\",\"layouts\":[{\"id\":0,\"position\":{\"x\":585.9367828606845,\"y\":332.0765841973903,\"z\":2000,\"width\":382.8486239300491,\"height\":237.3935911824319,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CUSTOMERS_DATA.count\"}],\"Category\":[{\"queryRef\":\"CUSTOMERS_DATA.Gender\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTOMERS_DATA\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"count\"},\"Name\":\"CUSTOMERS_DATA.count\",\"NativeReferenceName\":\"count\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Gender\"},\"Name\":\"CUSTOMERS_DATA.Gender\",\"NativeReferenceName\":\"Gender\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"count\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
           "filters": "[]",
           "height": 237.39,
           "width": 382.85,
           "x": 585.94,
           "y": 332.08,
-          "z": 2.00
+          "z": 2000.00
         },
         {
-          "config": "{\"name\":\"ccb6a9b7960178ee0b60\",\"layouts\":[{\"id\":0,\"position\":{\"x\":585.9367828606845,\"y\":82.33303740431164,\"z\":1,\"width\":382.8486239300491,\"height\":229.1602874420007,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTOMERS_DATA.count\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTOMERS_DATA\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"count\"},\"Name\":\"CUSTOMERS_DATA.count\",\"NativeReferenceName\":\"count\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"count\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "config": "{\"name\":\"ccb6a9b7960178ee0b60\",\"layouts\":[{\"id\":0,\"position\":{\"x\":585.9367828606845,\"y\":82.33303740431164,\"z\":1000,\"width\":382.8486239300491,\"height\":229.1602874420007,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTOMERS_DATA.count\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTOMERS_DATA\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"count\"},\"Name\":\"CUSTOMERS_DATA.count\",\"NativeReferenceName\":\"count\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"count\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
           "filters": "[]",
           "height": 229.16,
           "width": 382.85,
           "x": 585.94,
           "y": 82.33,
-          "z": 1.00
+          "z": 1000.00
         }
       ],
       "width": 1280.00
